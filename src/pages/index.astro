@@ -1,0 +1,336 @@
+---
+// import Layout from '../layouts/Layout.astro';
+// import Card from '../components/Card.astro';
+import Estructura from "../layouts/Estructura.astro"
+import HeaderSecundario from "../components/HeaderSecundario.astro"
+import Botones from "../components/Botones.astro"
+import BotonFantasma from "../components/BotonFantasma.astro"
+ import Footer from "../components/Footer.astro"
+ import Ventaja from "../components/Ventaja.astro"
+ import Comparacion from "../components/Comparacion.astro"
+ import Planes from "../components/Planes.astro"
+// import FooterDos from "../components/FooterDos.astro"
+---
+
+<Estructura>
+
+<HeaderSecundario slot="header"></HeaderSecundario>
+
+
+<div class="portada relative h-[800px] xl:h-[750px]  " slot="main">
+
+	<figure class="portada h-full " >
+		<img   class="h-full object-cover w-full" src="/public/img/prueba.jpg" alt="">
+	</figure>
+	<div class="portada__descripcion absolute h-full w-full top-0 flex flex-col justify-center items-center bg-[#00000087] gap-1 p-4 pt-40 xl:flex-row">
+		<!-- <figure class="self-start xl:self-auto">
+			<img src="https://tefacturo.pe/wp-content/uploads/2022/01/autorizado-por-sunat-tefacturo-pe.png" alt="" class="xl:w-[250px]">
+		</figure> -->
+<div class="grupo1 xl:p-20 xl:flex-1 xl:pt-0 xl:pb-12 ">
+
+	<p class="text-white font-bold text-[2rem]  mb-4 xl:text-7xl xl:mb-8 xl:leading-snug" >¡Facturación Electrónica <span class="text-2xl block xl:text-4xl">y Equipos a tu Alcance! 🚀!</span></p>
+	<p class="text-[#ffffffcf] mb-6 text-[1rem] xl:text-2xl"> Obtén nuestra aplicación que  te ofrece la solución completa y los equipos necesarios para maximizar tu eficiencia contable</p>
+	<div class="portada__botones flex flex-col gap-4 xl:flex-row xl:flex-wrap xl:gap-y-7">
+		<Botones title="Quiero una asesoria"></Botones>
+		<!-- <BotonFantasma title="Comprar" img="/public/img/buy.svg"></BotonFantasma> -->
+		<BotonFantasma title="Ver Demo" img="/public/img/play.svg"></BotonFantasma>
+		
+		
+	</div>
+
+
+	<!-- <a href="" class="self-center" >
+		<figure><img src="/public/img/google-play.svg" alt="" class="xl:w-[250px]"></figure>
+	</a> -->
+</div>
+<a href="" class="self-center" >
+	<figure><img src="https://facturasimple.pe/img/cambios/portada.png" alt="" class=":w-[490px] xl:w-[830px]"></figure>
+</a>
+	
+
+	</div>
+
+
+</div>
+
+
+<!-- <div class="relleno h-[900px] bg-red-500"    slot="main" >
+
+
+</div> -->
+
+
+
+<div class="ventajas p-3 " slot="main">
+
+<h2 class="text-2xl text-center p-4 text-[#022F36] xl:text-3xl xl:p-12" >Ventajas del sistema <span>Factura Simple</span></h2>
+
+ <div class="pru hidden xl:flex">
+
+<div class="ventaja__grupo  ">
+	<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+
+	<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+	<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+</div>
+
+
+
+<div class="ventaja__grupo">
+	<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+
+	<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+	<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+</div>
+
+
+<div class="ventaja__grupo">
+	<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+
+	<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+	<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+</div>
+
+
+
+
+	
+	
+</div> 
+
+
+
+
+
+
+
+
+
+<div class="swiper mySwiper  xl:hidden" >
+    <div class="swiper-wrapper">
+      <div class="swiper-slide rounded-xl"><Ventaja title="ADAPTABLE A SU EMPRESA" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/img/icon/instagram.svg"></Ventaja></div>
+      <div class="swiper-slide rounded-xl"><Ventaja title="AUTORIZADO POR SUNAT" descripcion="RAPIFAC pertenece al Padrón de Proveedores de Servicios Electrónicos – PSE, Resolución de Intendencia N° 094-005-0001933 / SUNAT." imagen="/public/mail.svg"></Ventaja></div>
+      <div class="swiper-slide rounded-xl"><Ventaja title="IMPLEMENTACIÓN INMEDIATA" descripcion="Activación del sistema en 24 horas." imagen="/public/img/icon/instagram.svg"></Ventaja></div>
+      <div class="swiper-slide rounded-xl"><Ventaja title="ADAPTABLE A SU EMPRESA" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/img/icon/instagram.svg"></Ventaja></div>
+      <div class="swiper-slide rounded-xl"><Ventaja title="ADAPTABLE A SU EMPRESA" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/img/icon/instagram.svg"></Ventaja></div>
+      <div class="swiper-slide rounded-xl"><Ventaja title="ADAPTABLE A SU EMPRESA" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/img/icon/instagram.svg"></Ventaja></div>
+      <div class="swiper-slide rounded-xl"><Ventaja title="ADAPTABLE A SU EMPRESA" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/img/icon/instagram.svg"></Ventaja></div>
+      <div class="swiper-slide rounded-xl"><Ventaja title="ADAPTABLE A SU EMPRESA" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/img/icon/instagram.svg"></Ventaja></div>
+      <div class="swiper-slide rounded-xl"><Ventaja title="ADAPTABLE A SU EMPRESA" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/img/icon/instagram.svg"></Ventaja></div>
+    </div>
+    <div class="swiper-pagination bottom-[-4px]"></div>
+  </div>
+
+
+
+
+
+</div>
+
+<div class="demo" slot="main">
+	<h2 class="text-2xl text-center p-4 text-[#022F36] xl:text-3xl xl:p-12">Demo</h2>
+	<video src="/public/coverr-misty-mountain-road-journey-1080p.mp4" class="p-4 pb-" controls></video>
+	
+	</div>
+
+
+
+
+
+<div class="equipos" slot="main">
+	<h2 class="text-2xl text-center p-4 text-[#022F36] xl:text-3xl xl:p-12">Ademas puedes adquirir equipos  para una facturación electrónica impecable!</h2>
+
+
+
+
+
+
+
+	<div class="swiper mySwiper  " >
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide nuevo rounded-xl"><figure><img   class="w-[386px]" src="/public/img/prueba.jpg" alt=""></figure></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="EMISIÓN OFFLINE" descripcion="Puedes emitir incluso sin señal de internet, solo debes sincronizar una vez al día." imagen="/public/mail.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="NO MÁS TALONARIOS NI BOLETAS A TIMBRAR EN SUNAT" descripcion="Conexión permanente e ingreso automático de boletas al SUNAT" imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="NO MÁS LIBROS DE VENTAS" descripcion="Todas tus ventas quedarán registradas para que puedas imprimir reportes detallados" imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="TUS VENTAS ORDENADAS" descripcion="Sistema de facturación web incluido para revisar el detalle de tus ventas." imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="CATÁLOGO DE PRODUCTOS" descripcion="Crea un catálogo de tus productos para vender de forma más rápida y ordenada." imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="EMISIÓN ILIMITADA" descripcion="Emite todas las boletas electrónicas que necesites a un solo precio." imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="SIN PERIODO MÍNIMO DE CONTRATACIÓN" descripcion="Contrata FacturaSimple por el periodo que prefieras." imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		
+		</div>
+		<div class="swiper-pagination bottom-[-4px]"></div>
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>	
+
+
+
+
+
+
+
+<div class="planes" slot="main">
+	<Planes title="Plan independiente" anual="141.90" mensual="12.90" caracteristicas={["50 ncomprobantes al mes","1 usuario","1 establecimiento", "total en ventas S/8000","todo tipo de comprobantes"]}></Planes>
+</div>
+
+
+
+
+
+
+<div class="comparacion p-3  " slot="main">
+
+	<h2 class="text-2xl text-center p-4 text-[#022F36] xl:text-3xl xl:p-12" >Factura simple en comparación <span>a otros punto de venta</span></h2>
+	
+	 <div class="pru hidden xl:flex">
+	
+	<div class="ventaja__grupo  ">
+		<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+	
+		<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+		<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+	</div>
+	
+	
+	
+	<div class="ventaja__grupo">
+		<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+	
+		<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+		<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+	</div>
+	
+	
+	<div class="ventaja__grupo">
+		<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+	
+		<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+		<Ventaja title="Adaptable a su empresa" descripcion="El sistema se personaliza de acuerdo a las acatividades de tu empresa" imagen="/public/mail.svg"></Ventaja>
+	</div>
+	
+	
+	
+	
+		
+		
+	</div> 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="swiper mySwiper  xl:hidden" >
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide rounded-xl"><Comparacion title="SIN COSTOS DE INVERSIÓN" descripcion="No tendrás que gastar en costosos equipos, instalaciones, ni mantención." imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="EMISIÓN OFFLINE" descripcion="Puedes emitir incluso sin señal de internet, solo debes sincronizar una vez al día." imagen="/public/mail.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="NO MÁS TALONARIOS NI BOLETAS A TIMBRAR EN SUNAT" descripcion="Conexión permanente e ingreso automático de boletas al SUNAT" imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="NO MÁS LIBROS DE VENTAS" descripcion="Todas tus ventas quedarán registradas para que puedas imprimir reportes detallados" imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="TUS VENTAS ORDENADAS" descripcion="Sistema de facturación web incluido para revisar el detalle de tus ventas." imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="CATÁLOGO DE PRODUCTOS" descripcion="Crea un catálogo de tus productos para vender de forma más rápida y ordenada." imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="EMISIÓN ILIMITADA" descripcion="Emite todas las boletas electrónicas que necesites a un solo precio." imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		  <div class="swiper-slide rounded-xl"><Comparacion title="SIN PERIODO MÍNIMO DE CONTRATACIÓN" descripcion="Contrata FacturaSimple por el periodo que prefieras." imagen="/public/img/icon/instagram.svg"></Comparacion></div>
+		
+		</div>
+		<div class="swiper-pagination bottom-[-4px]"></div>
+	  </div>
+	
+	
+	
+	
+	
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Footer  slot="footer"></Footer>
+
+
+
+
+
+</Estructura>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" is:inline></script>
+
+<!-- Initialize Swiper -->
+<script is:inline>
+  var swiper = new Swiper(".mySwiper", {
+	spaceBetween: 30,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+  });
+</script>
+
+
+
+
+<style>
+
+	.ventajas{
+		background-image: url("/public/ColoredShapes.svg");
+		background-size: cover;
+		background-attachment: fixed;
+		padding-bottom: 2.5rem;
+	}
+	.comparacion{
+		background-color: rgba(122, 252, 209, 0.055);
+		margin-bottom: 1.5rem;
+	}
+	.swiper-slide.nuevo img{
+		width: 386px;
+	}
+	.equipos{
+		background-image: url("/public/ColoredShapes.svg");
+		background-size: cover;
+		background-attachment: fixed;
+		padding-bottom: 2.5rem;
+	}
+
+</style>
